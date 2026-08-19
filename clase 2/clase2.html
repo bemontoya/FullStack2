@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h2>Bloque - Block</h2>
+    <!--La etiqueta div sirve para crear elementos en bloque -->
+    <div style="background-color: tomato;">Este es un div es un elemento en bloque</div>
+
+    <div style="background-color: tomato;">Este es un div es un elemento en bloque</div>
+    
+    <h2>En linea - inline</h2>
+    <!--La etiqueta span sirve para crear elementos en línea -->
+    <span style="background-color: blueviolet;"><a href="#">Soy un botón inline</a></span>
+
+    <span style="background-color: blueviolet;"><a href="#">Soy un botón inline</a></span>
+
+    <span style="background-color: blueviolet;"><a href="#">Soy un botón inline</a></span>
+
+    <section>
+        <h2>Formulario de contacto</h2>
+
+        <!--La etiqueta form sirve para crear formularios -->
+        
+        <!--Post para enviar-->
+        <form action="agradecimiento.html"
+        method="post">
+        <!--Etiqueta-->
+        <!--Con name se enlaza al label de nombre que pertenece al for-->
+        <!--Con required se especifica que el campo es obligatorio-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"
+        name="nombre" required>
+        <!--br funciona para dar espacio hacia abajo-->
+        <br>
+        <br>
+
+        <!--Type email sirve para crear campo de correo electronnico con @ obligatorio-->
+        <label for="email">Correo:</label>
+        <input type="email" id="email"
+        name="email" required>
+        <br>
+        <br>
+
+        <!--Textarea para crear campos de textos grandes-->
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <br>
+        <br>
+        <label for="pais">Escoge tu país</label>
+        <!--Select sirve para crear menús desplegables -->
+        <!--Con option agregamos el contenido que tendrá ese menú despegable-->
+        <select name="pais" id="pais">
+            <option value="cl">Chile</option>
+            <option value="br">Brasil</option>
+            <option value="mx">Mexico</option>
+            <option value="ve">Venezuela</option>
+            <option value="es">España</option>
+            </select>
+            <br>
+            <br>
+            
+            <!--Checkbox sirve para crear casillas de verificación-->
+            <label for="checkbox">Acepta los terminos</label>
+            <input type="checkbox" name="checkbox" id="">
+            <br>
+            <br>
+            <label for="">Escoge tu color favorito</label>
+            <input type="color" name="color" 
+            id="color">
+            <br>
+            <br>
+            <label for="checkbox">Selecciona la fecha de la reserva</label>
+            <!--Date sirve para crear campos de fecha-->
+            <input type="date" name="">
+            <br>
+            <br>
+            <!--File sirve para crear campos de selección de archivos-->
+            <label for="file">Selecciona tu archivo</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <br>
+            <!--Con radio se puede elegir solo unna opción a diferencia de checkbox-->
+            <label for="file">Selecciona una opción</label>
+            <input type="radio" name="" id="">
+            <br>
+            <br>
+            <!--Password sirve para crear campos de contraseña-->
+            <label for="pass">Agrega tu contraseña</label>
+            <input type="password" name="" id="">
+            <br>
+            <br>
+            <!--Number solo acepta números-->
+            <label for="number">Number</label>
+            <input type="number" name="number" id="" min="0" max="5">
+            <!--Button para enviar el formulario-->
+            <button type="submit">Enviar</button>
+   
+            
+
+
+
+
+
+
+
+
+            
+        </form>
+    </section>
+
+    <section>
+        <h2>Multimedia</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio</audio>
+
+        <!--Width y Height para especificar el tamaño del video-->
+        <h2>Video</h2>
+        <video controls width="400">
+            <source src="video.mp4">
+        Tu navegador no soporta el elemento de video</video>
+    </section>
+
+    <button popovertarget="info">Mostrar info</button>
+    <div id="info" popover>
+        <p>Este es un popover emergente</p>
+        <button popovertarget="info">Cerrar</button>
+    </div>
+
+
+
+    
+</body>
+</html>

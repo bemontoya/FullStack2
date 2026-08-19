@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        /*Cuerpo del doc*/
+        body{
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th{
+            background-color: #eee;
+        }
+        caption{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla</h1>
+
+    <table>
+        <caption>
+            Registro de estudiantes
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Asignatura</th>
+                <th>Nota</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Benjamin</td>
+                <td>Full Stack</td>
+                <td>7.0</td>
+                <td>Activo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>María</td>
+                <td>Full Stack</td>
+                <td>3.0</td>
+                <td>Reprobado</td>
+            </tr>
+            <!--colspan sirve para que una celda se extienda por varias columnas-->
+            <tfoot>
+                <tr>
+                    <td colspan="3">Promedio General</td>
+                    <td>3.0</td>
+                    <td>Curso Reprobado</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+
+
+    
+</body>
+</html>
